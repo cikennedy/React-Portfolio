@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -10,11 +10,10 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,11 +23,11 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <!-- <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root"></div> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +38,242 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <!-- </body>
+</html> --> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chris Kennedy Professional Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/13fa666483.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/style.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="max-width">
+        <div class="logo"><a href="#">Portfolio</a></div>
+        <ul class="menu">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+          <li>
+            <a href="https://github.com/cikennedy/updated-portfolio/raw/main/assets/Resume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">My name is</div>
+          <div class="text-2">Chris Kennedy</div>
+          <div class="text-3">and I'm an aspiring</div>
+          <div class="text-4">full-stack web developer</div>
+        </div>
+      </div>
+    </section>
+
+    <a name="about-me"></a>
+    <section class="about" id="about">
+      <div class="max-width">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+          <div class="column left">
+            <img src="./assets/images/ckphoto.jpg" alt="" />
+          </div>
+          <div class="column right">
+            <div class="text">
+              I am currently a student in the Northwestern Full-Stack Web
+              Development Coding Boot Camp.
+            </div>
+            <p>
+              My previous career was in B2B sales for logistics and software. I
+              was always interested in learning to code and the unfortunate
+              circumstances of the pandemic were the catalyst to get me started
+              on this journey.
+            </p>
+            <br />
+            <p>
+              While I am still learning, I am eager to work in this field and
+              create quality products! Please see my work and contact info below
+              and do not hesitate to reach out for more details.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a name="skills"></a>
+    <section class="skills" id="skills">
+      <div class="max-width">
+        <h2 class="title">Skills</h2>
+        <div class="skills-content">
+          <div class="column left">
+            <div class="text">
+              I am learning the MERN stack, including <br />
+              the following skills and languages:
+            </div>
+            <ul>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Agile Methodology</li>
+              <li>Database Theory</li>
+              <li>And more!</li>
+            </ul>
+          </div>
+          <div class="column right">
+            <img
+              src="./assets/images/joan-gamell-ZS67i1HLllo-unsplash.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a name="work"></a>
+    <section class="work" id="work">
+      <div class="max-width">
+        <h2 class="title">Work</h2>
+        <div class="carousel owl-carousel">
+          <a href="https://github.com/cikennedy/project-2" target="_blank">
+            <div class="card">
+              <div class="box">
+                <img src="./assets/images/Find-My-Pet.png" alt="" />
+                <div class="text">Find My Pet</div>
+                <p>A full-stack Heroku application to help pet owners locate missing animals.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://cikennedy.github.io/Bathroom-Finder/" target="_blank">
+            <div class="card">
+              <div class="box">
+                <img src="./assets/images/bathroom-finder.png" alt="" />
+                <div class="text">Bathroom Finder</div>
+                <p>A user-friendly application for at-risk Chicago citizens to locate safe bathrooms.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/cikennedy/tech-blog" target="_blank">
+            <div class="card">
+              <div class="box">
+                <img src="./assets/images/Tech-Blog.png" alt="" />
+                <div class="text">Tech Blog</div>
+                <p>A CMS-style blog for users to post and comment on tech-related information.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/cikennedy/README-generator" target="_blank">
+            <div class="card">
+              <div class="box">
+                <img src="./assets/images/ReadMe.png" alt="" />
+                <div class="text">README Generator</div>
+                <p>Node.js application for users to quickly and reliably generate a README.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/cikennedy/E-Commerce-Back-End" target="_blank">
+            <div class="card">
+              <div class="box">
+                <img src="./assets/images/ECommerce.png" alt="" />
+                <div class="text">E-Commerce Back End</div>
+                <p>Back end API for an app using Sequelize to interact with a MySQL database.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/cikennedy/daily-planner" target="_blank">
+            <div class="card">
+              <div class="box">
+                <img src="./assets/images/daily-planner.png" alt="" />
+                <div class="text">Daily Planner</div>
+                <p>A simple application to allow users to plan their work schedules by the hour.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <a name="contact-me"></a>
+    <section class="contact" id="contact">
+      <div class="max-width">
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-content">
+          <a href="mailto: kennedy.christopherian@gmail.com" target="_blank">
+            <div class="row">
+              <i class="fas fa-envelope-square"></i>
+              <div class="info">
+                <div class="subtitle">Kennedy.ChristopherIan@gmail.com</div>
+              </div>
+            </div>
+          </a>
+          <a href="tel: +16304847430" target="_blank">
+            <div class="row">
+              <i class="fas fa-phone-square"></i>
+              <div class="info">
+                <div class="subtitle">(630) 484-7430</div>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/cikennedy" target="_blank">
+            <div class="row">
+              <img src="./assets/images/In-White-128.png" id="linkedin" />
+              <div class="info">
+                <div class="subtitle">LinkedIn</div>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/cikennedy/" target="_blank">
+            <div class="row">
+              <img src="./assets/images/GitHub-Mark-Light-120px-plus.png" id="github" />
+              <div class="info">
+                <div class="subtitle">GitHub</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
+
+<!-- <i class="fas fa-envelope-square"></i>
+
+<i class="fas fa-phone-square"></i> -->
